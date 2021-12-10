@@ -1,0 +1,131 @@
+body {
+  background-color: #1d1d1d !important;
+  display: grid !important;
+  justify-content: center !important;
+  align-content: center !important;
+  align-items: center !important; }
+  body h1, body h2, body h3, body h4 {
+    text-align: center;
+    color: aliceblue; }
+  body .Container {
+    background-color: #424242;
+    box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 1rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 2rem; }
+    body .Container .TitleDiv {
+      padding: 0 3rem; }
+    body .Container .BalanceContainer h1 {
+      margin-top: -1rem; }
+    body .Container .IncomeExpensesDisplayContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1rem 0;
+      background-color: #131313;
+      box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5); }
+      body .Container .IncomeExpensesDisplayContainer h4, body .Container .IncomeExpensesDisplayContainer h3 {
+        color: aliceblue;
+        text-align: center; }
+      body .Container .IncomeExpensesDisplayContainer .center {
+        display: grid;
+        justify-content: center; }
+        body .Container .IncomeExpensesDisplayContainer .center h4 {
+          font-size: .8rem; }
+        body .Container .IncomeExpensesDisplayContainer .center .centerIn {
+          margin-top: -2rem;
+          display: grid;
+          justify-content: center; }
+      body .Container .IncomeExpensesDisplayContainer .ExpenseContainerDiv {
+        border-left: 1px solid white; }
+    body .Container .ActionContainer {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 2fr 3fr; }
+      @media (max-width: 570px) {
+        body .Container .ActionContainer {
+          grid-template-columns: 1fr; } }
+      body .Container .ActionContainer .TransactionItemsList {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem; }
+        body .Container .ActionContainer .TransactionItemsList h3, body .Container .ActionContainer .TransactionItemsList h2, body .Container .ActionContainer .TransactionItemsList li {
+          color: white;
+          list-style: none;
+          text-align: center; }
+        body .Container .ActionContainer .TransactionItemsList .TransactionItem {
+          background-color: #444444;
+          background-color: #131313;
+          display: grid;
+          grid-template-columns: 5fr 1fr;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+          transition: .3s all ease-in-out;
+          cursor: pointer;
+          width: 100%; }
+          body .Container .ActionContainer .TransactionItemsList .TransactionItem:hover {
+            box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.8); }
+          body .Container .ActionContainer .TransactionItemsList .TransactionItem .info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center; }
+          body .Container .ActionContainer .TransactionItemsList .TransactionItem .btnClass {
+            display: grid;
+            justify-content: center;
+            align-items: center; }
+            body .Container .ActionContainer .TransactionItemsList .TransactionItem .btnClass button {
+              cursor: pointer;
+              border: none;
+              background-color: #ff9393;
+              height: 30px;
+              width: 30px;
+              border-radius: 50%;
+              color: white;
+              transition: .3s all ease-in-out;
+              cursor: pointer; }
+              body .Container .ActionContainer .TransactionItemsList .TransactionItem .btnClass button:hover {
+                background-color: red; }
+      body .Container .ActionContainer .FormContainer {
+        padding-bottom: 2rem; }
+        body .Container .ActionContainer .FormContainer h3 {
+          text-align: center;
+          color: white; }
+        body .Container .ActionContainer .FormContainer .FormContent {
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem; }
+          body .Container .ActionContainer .FormContainer .FormContent .FormControl {
+            width: 100%;
+            display: grid; }
+            body .Container .ActionContainer .FormContainer .FormContent .FormControl input {
+              border: none;
+              border-bottom: 1px solid #363636;
+              background-color: transparent;
+              outline: none;
+              color: white;
+              width: 20vw;
+              height: 40px;
+              transition: all ease-in-out .3s;
+              padding: 0 1rem; }
+              @media (max-width: 570px) {
+                body .Container .ActionContainer .FormContainer .FormContent .FormControl input {
+                  width: 50vw; } }
+              body .Container .ActionContainer .FormContainer .FormContent .FormControl input:focus {
+                background-color: #363636;
+                border-bottom: .1px solid aliceblue; }
+            body .Container .ActionContainer .FormContainer .FormContent .FormControl button {
+              border: none;
+              background-color: #131313;
+              color: aliceblue;
+              height: 40px;
+              transition: all ease-in-out .3s;
+              cursor: pointer;
+              box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5); }
+              body .Container .ActionContainer .FormContainer .FormContent .FormControl button:hover {
+                box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.5);
+                transform: translateY(-0.2rem); }

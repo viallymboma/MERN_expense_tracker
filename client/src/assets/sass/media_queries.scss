@@ -1,0 +1,186 @@
+
+
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == very_big_1900 {
+        @media (max-width: 1900px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1120u {
+        @media (min-width: 1120px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1670 {
+        @media (max-width: 1670px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1600 {
+        @media (max-width: 1600px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1500 {
+        @media (max-width: 1500px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1470 {
+        @media (max-width: 1470px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1400 {
+        @media (max-width: 1400px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1374 {
+        @media (max-width: 1374px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1370 {
+        @media (max-width: 1370px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1250 {
+        @media (max-width: 1250px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1200 {
+        @media (max-width: 1200px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1160 {
+        @media (max-width: 1167px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1100 {
+        @media (max-width: 1100px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_1020 {
+        @media (max-width: 1020px) {
+            @content
+        }
+    };
+
+
+    @if $breakpoint == very_big_1000 {
+        @media (max-width: 1000px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_960 {
+        @media (max-width: 960px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_900 {
+        @media (max-width: 900px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_860 {
+        @media (max-width: 860px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_780 {
+        @media (max-width: 780px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_750 {
+        @media (max-width: 750px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_720 {
+        @media (max-width: 720px) {
+            @content
+        }
+    };
+    
+    @if $breakpoint == very_big_650 {
+        @media (max-width: 650px) {
+            @content
+        }
+    };
+    
+    @if $breakpoint == very_big_570 {
+        @media (max-width: 570px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_550 {
+        @media (max-width: 550px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_500 {
+        @media (max-width: 500px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_440 {
+        @media (max-width: 440px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_430 {
+        @media (max-width: 430px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_400 {
+        @media (max-width: 400px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_360 {
+        @media (max-width: 360px) {
+            @content
+        }
+    };
+
+    @if $breakpoint == very_big_300 {
+        @media (max-width: 300px) {
+            @content
+        }
+    };
+}

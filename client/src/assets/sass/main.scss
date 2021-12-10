@@ -1,0 +1,239 @@
+@import 'media_queries';
+
+
+
+
+body {
+    background-color: rgb(29, 29, 29)!important;
+    display: grid!important;
+
+    justify-content: center!important;
+    align-content: center!important;
+    align-items: center!important;
+
+    h1, h2, h3, h4 {
+        text-align: center;
+        color: aliceblue;
+    }
+
+
+    // .Main {
+        // background-color: aqua;
+        // height: 100vh;
+        // width: 100vw;
+        // display: grid;
+        // justify-content: center;
+        // align-items: center;
+
+    .Container {
+        // background-color: azure;
+        background-color: rgb(66, 66, 66);
+        box-shadow: 1px 10px 10px 5px rgba(0, 0, 0, 0.5);
+        padding: 0 1rem;
+        padding-bottom: 3rem;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        gap: 2rem;
+        
+        .TitleDiv {
+            padding: 0 3rem;
+        }
+
+        .BalanceContainer {
+            // padding: 0 3rem;
+            // h4 {
+            //     color: white;
+            // }
+
+            h1 {
+                // color: white;
+                margin-top: -1rem;
+            }
+        }
+
+        .IncomeExpensesDisplayContainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 1rem 0;
+            background-color: rgb(19, 19, 19);
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+
+            h4, h3 {
+                color: aliceblue;
+                text-align: center;
+            }
+
+            .center {
+                display: grid;
+                justify-content: center;
+                h4 {
+                    font-size: .8rem;
+                }
+                
+
+                .centerIn {
+                    margin-top: -2rem;
+                    display: grid;
+                    justify-content: center;
+                }
+            }
+
+            .IncomeContainerDiv {
+                // background-color: aqua;
+
+                
+            }
+
+            .ExpenseContainerDiv {
+                border-left: 1px solid white;
+                .expenseValue {
+                    
+                }
+            }
+
+        }
+
+        .ActionContainer {
+
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 2fr 3fr;
+
+            @include respond (very_big_570) {
+                grid-template-columns: 1fr;
+            }
+
+            .TransactionItemsList {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                // padding: 0 2rem;
+                
+    
+                h3, h2, li {
+                    color: white;
+                    list-style: none;
+                    text-align: center;
+                }
+    
+                .TransactionItem {
+                    background-color: rgb(68, 68, 68);
+                    background-color: rgb(19, 19, 19);
+                    // background-color: white;
+                    display: grid;
+                    grid-template-columns: 5fr 1fr;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+
+                    transition: .3s all ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.8);
+                    }
+                    // gap: 1rem;
+    
+                    .info {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        // background-color: white;
+                        justify-content: center;
+                        align-items: center;
+                    }
+    
+                    .btnClass {
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                        // background-color: aqua;
+                        button {
+                            cursor: pointer;
+                            border: none;
+                            background-color: rgb(255, 147, 147);
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 50%;
+                            color: white;
+                            
+
+                            transition: .3s all ease-in-out;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: red;
+                                // box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 1);
+                            }
+                        }
+                    }
+                    width: 100%;
+                }
+            }
+    
+    
+            .FormContainer {
+                // background-color: rgb(19, 19, 19);
+                h3 {
+                    text-align: center;
+                    color: white;
+                }
+    
+                padding-bottom: 2rem;
+    
+                .FormContent {
+    
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+    
+                    .FormControl {
+                        width: 100%;
+                        display: grid;
+    
+                        input {
+                            border: none;
+                            border-bottom: 1px solid rgb(54, 54, 54);
+                            background-color: transparent;
+                            outline: none;
+                            color: white;
+                            width: 20vw;
+                            height: 40px;
+                            transition: all ease-in-out .3s;
+                            padding: 0 1rem;
+
+                            @include respond (very_big_570) {
+                                width: 50vw;
+                            }
+
+                            &:focus {
+                                background-color: rgb(54, 54, 54);
+                                border-bottom: .1px solid aliceblue;
+                            }
+                        }
+                        
+                        button {
+                            border: none;
+                            background-color: rgb(19, 19, 19);
+                            color: aliceblue;
+                            height: 40px;
+                            transition: all ease-in-out .3s;
+                            cursor: pointer;
+                            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    
+                            &:hover {
+                                // background-color: rgb(54, 54, 54);
+                                // color: rgb(19, 19, 19);
+                                box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.5);
+                                transform: translateY(-.2rem);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    // }
+}
