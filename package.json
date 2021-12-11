@@ -1,18 +1,20 @@
 {
-  "name": "mern_expense_tracker_",
+  "name": "mern_expense_tracker",
   "version": "1.0.0",
-  "description": "this expense tracker will actually be connected to a live backend with node and express",
-  "main": "index.js",
+  "description": "track your expenses with our mern application",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/viallymboma/MERN_expense_tracker.git"
   },
-  "author": "viallymboma",
+  "author": "vially mboma",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/viallymboma/MERN_expense_tracker/issues"

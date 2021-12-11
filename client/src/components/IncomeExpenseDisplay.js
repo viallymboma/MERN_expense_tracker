@@ -22,7 +22,7 @@ const IncomeExpenseDisplay = () => {
             <div className='IncomeContainerDiv center'>
                 <h4>INCOME</h4>
                 <div className='incomeValue centerIn'>
-                    <h3>
+                    <h3 style={{ color: "5px solid green"  }}>
                         + $ { totalPositiveAmounts }
                     </h3>
                 </div>
@@ -31,7 +31,7 @@ const IncomeExpenseDisplay = () => {
             <div className='ExpenseContainerDiv center'>
                 <h4>EXPENSE</h4>
                 <div className='expenseValue centerIn'>
-                    <h3>
+                    <h3 style={{ color: "5px solid red" }}>
                         - $ { totalNegativeAmounts }
                     </h3>
                 </div>

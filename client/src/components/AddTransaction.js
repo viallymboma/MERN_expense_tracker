@@ -13,8 +13,8 @@ const AddTransaction = () => {
         e.preventDefault();
 
         const newTransaction = {
-            id: Math.floor(Math.random(GlobalContext)),
-            item_name,
+            // id: Math.floor(Math.random(GlobalContext)),
+            text: item_name,
             amount: parseFloat(amount)
         }
 

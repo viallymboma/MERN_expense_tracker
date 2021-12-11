@@ -1,15 +1,30 @@
 const express = require('express');
 
 const dotenv = require('dotenv');
-dotenv.config({path: './config/config.env'})
 
 const colors = require('colors');
 
 const morgan = require('morgan');
 
+const connectDB = require('./config/db');
+
+dotenv.config({path: './config/config.env'});
+
+connectDB();
+
+const transactions = require('./routes/transactions');
+
 const app = express();
 
-app.get('/', (req, res) => res.send('Hello'));
+// helps us use the body parser ex: request.body
+app.use(express.json());
+
+if (process.env.NODE_ENV === 'development') {
+    // morgan is used to show us resource request on our terminal after every request actions
+    app.use(morgan('dev'));
+}
+
+app.use('/api/v1/transactions', transactions);
 
 const PORT = process.env.PORT || 5000;
 

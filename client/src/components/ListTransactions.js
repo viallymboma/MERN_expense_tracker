@@ -1,11 +1,17 @@
-import React, {useContext} from 'react';
+import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from './context/GlobalContext';
 
 import Transaction from './Transaction';
 
 const ListTransactions = () => {
 
-    const {transactions} = useContext(GlobalContext)
+    const { transactions, getTransactions } = useContext(GlobalContext);
+
+    useEffect(() => {
+        getTransactions();
+        console.log(getTransactions())
+        // eslint-di-able-next-line react-hooks/exhaustive-deps
+    }, [])
     console.log(transactions)
 
     return (
@@ -14,13 +20,10 @@ const ListTransactions = () => {
             {
                 transactions.map(transaction => {
                     return (
-                        <Transaction key={transaction.id} id={transaction.id} style={ transaction.amount > 0 ? { borderRight: "5px solid green" } : {borderRight: "5px solid red"}} name={transaction.item_name} amount={transaction.amount} />
+                        <Transaction key={transaction._id} id={transaction._id} style={ transaction.amount > 0 ? { borderRight: "5px solid green" } : {borderRight: "5px solid red"}} name={transaction.text} amount={transaction.amount} />
                     )
                 })
             }
-            {/* <Transaction style={{ borderRight: "5px solid green" }} name="Book Sold" amount={+100} />
-            <Transaction style={{ borderRight: "5px solid red" }} name="Camera" amount={-50} />
-            <Transaction style={{ borderRight: "5px solid green" }} name="Cash In" amount={+70} /> */}
         </div>
     )
 }

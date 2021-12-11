@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { GlobalContext } from './context/GlobalContext';
 
 
@@ -6,7 +6,9 @@ const Transaction = (props) => {
 
     const { deleteTransaction } = useContext(GlobalContext)
 
-    const sign = props.amount < 0 ? '-' : '+'
+    const sign = props.amount < 0 ? '-' : '+';
+
+    console.log(props.id)
 
     return (
         <div className='TransactionItem' style={props.style}>
